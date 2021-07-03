@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
-	<title>m5</title>
-	<meta name="viewport" content="width=device-width,initial scale=1.0">
+	<title>mod5 solution</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#icon').click(function(){
-				$('ul').toggleclass('show');
+				$('ul').toggleClass('show');
 
 			});
 
@@ -24,6 +22,10 @@
 			text-decoration: none;
 			list-style: none;
 		}
+		body{
+			font-family: montserrat;
+
+		}
 		nav{
 			height: 80px;
 			width: 100%;
@@ -32,14 +34,14 @@
 		label.logo{
 			font-size: 35px;
 			font-weight: bold;
-			color: white;
+			color:white;
 			padding: 0 100px;
 			line-height: 80px;
+
 		}
 		nav ul{
-			float:right;
+			float: right;
 			margin-right: 40px;
-
 		}
 		nav li{
 			display: inline-block;
@@ -49,12 +51,10 @@
 		nav a{
 			color: white;
 			font-size: 18px;
-			text-transform: uppercase
-			border:1px solid transparent;
-			padding: 7px 10px ;
+			text-transform: uppercase;
+			border: 1px solid transparent;
+			padding: 7 10px;
 			border-radius: 3px;
-
-
 		}
 		a.active,a:hover{
 			border: 1px solid white;
@@ -65,15 +65,16 @@
 			font-size: 30px;
 			line-height: 80px;
 			float: right;
+			margin-right: 40px
 			margin-right: 40px;
-			cursor:pointer;
+			cursor: pointer;
 			display: none;
 		}
-		@media (max-width: 1048px){
+		@media (max-width: 1048px)
+		{
 			label.logo{
 				font-size: 32px;
 				padding-left: 60px;
-
 			}
 			nav ul{
 				margin-right: 20px;
@@ -84,7 +85,8 @@
 			}
 
 		}
-		@media(max-width: 909px){
+		@media (max-width: 909px)
+		{
 			nav #icon{
 				display: block;
 			}
@@ -93,7 +95,7 @@
 				width: 100%;
 				height: 100vh;
 				background: #2f3640;
-				top: 80px;
+				top:80px;
 				left: -100%;
 				text-align: center;
 				transition: all .5s;
@@ -107,35 +109,39 @@
 				font-size: 20px;
 
 			}
-			a.active ,a:hover{
+			a.active,a:hover{
 				border: none;
 				color: #3498db;
 			}
 			nav ul.show{
 				left: 0;
+
+
 			}
 		}
 		
-	</style>
 
+	</style>
 </head>
 <body>
-	<nav>
-		<label class ="logo">designX</label>
-		<ul>
-			<li>
-				<a  class="active" href="#">home</a></li>
-				<li>
-				<a href="#">about</a></li><li>
-				<a href="#">services</a></li><li>
-				<a href="#">contact</a></li><li>
-				<a href="#">feedback</a></li>
+<nav>
+	<label class="logo">DesignX</label>
+	<ul>
 
-			</ul>
-			<label id="icon">
-				<i class="fa fa-bars"></i>
-			</label>
-		</nav>
+		<li><a class="active" href="#">Home</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">services</a></li>
+		<li><a href="#">contact</a></li>
+		<li><a href="#">feedback</a></li>
+	</ul>
+	<label id="icon">
+		<i class="fas fa-bars"></i>
+	</label>
+</nav>
+<section>
+	<body background="bg1.jpeg">
 
+	
+</section>
 </body>
 </html>
